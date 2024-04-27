@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #424242;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+    color: aqua;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-auto-rows: 60px;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.card-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* --- Pra cima e index --- */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraliza as divs horizontalmente */
+}
+
+.card-item-map {
+    width: calc(20% - 20px);
+    /* 20% de largura para cada coluna com espaçamento entre elas */
+    margin: 10px;
+    /* Espaçamento entre as divs */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-item-map .image-container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    /* Adiciona borda fixa nas imagens */
+}
+
+.card-item-map img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+
+.card-item-map:hover img {
+    transform: scale(1.05);
+    /* Aumenta o tamanho da imagem em 10% */
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.card-item-map:hover .texto-sobre-imagem {
+    opacity: 1;
+}
+
+/* --- Pra cima é agentes --- */
